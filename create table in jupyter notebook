@@ -1,0 +1,11 @@
+#Creating a new table in jupyter notebook
+#import pandas as pd
+#pip install tabulate
+
+from tabulate import tabulate
+
+New_Table = {"LIST OF MOVIES" : ["Kingsman 3","Dinner At My Place","Moon Fall", "355","Head Over Bills"], "LIST OF COMPANIES" : ["Facebook","Amazon", "Apple","Netflix","Google"], "NAMES OF FOOTBALL CLUBS" : ["Chelsea","Barcelona","PSG","Inter Milan","Juventus"]}
+print(tabulate(New_Table, headers = "keys", tablefmt="fancy_grid", showindex= True,missingval="N/A"))
+NewTable = New_Table.copy()
+
+print(tabulate(NewTable, headers = "keys", tablefmt="fancy_grid", showindex= True,missingval="N/A"))
